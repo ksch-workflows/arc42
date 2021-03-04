@@ -11,9 +11,9 @@
 ### Add a new architecture decision record
 
 ```
-CURRENT_DATE=2021-03-04
+DATE=2021-03-04
 SUBJECT=example-subject
-hugo new --kind adr 09_architecture-decisions/${CURRENT_DATE}_${SUBJECT}
+hugo new --kind adr 09_architecture-decisions/${DATE}_${SUBJECT}
 ```
 
 ## Maintenance

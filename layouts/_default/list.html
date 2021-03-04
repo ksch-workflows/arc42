@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>{{ .Title}}</title>
+</head>
+<body>
+  <h1>{{ .Title}}</h1>
+
+  {{ .Content}}
+  
+  {{ range sort .Pages "File.Path" }}
+  <ul>
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </li>
+  </ul>
+  {{ end }}
+  
+  <hr />
+  
+  <a href="{{ "imprint" | relURL }}">Imprint</a>
+  
+</body>
+</html>

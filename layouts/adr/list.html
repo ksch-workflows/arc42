@@ -1,0 +1,43 @@
+<html>
+<head>
+  <title>{{ .Title}}</title>
+</head>
+<body>
+  <h1>{{ .Title}}</h1>
+  
+  <hr />
+  
+  <p>
+    <i>{{ .Params.Purpose }}</i>
+  </p>
+  
+  <hr />
+  
+  
+  <table border="1" style="width:100%;">
+    <tr>
+      <th>
+        Date
+      </th>
+      <th style="width:90%;">
+        Subject
+      </th>
+    </tr>  
+    {{ range sort .Pages "File.Path" }}
+      <tr>
+        <td>
+          {{ .Params.FormattedDate }}
+        </td>
+        <td>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </td>
+      </tr>    
+    {{ end }}  
+  </table>
+  
+  <hr />
+  
+  <a href="{{ "imprint" | relURL }}">Imprint</a>
+  
+</body>
+</html>

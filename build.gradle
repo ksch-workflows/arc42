@@ -1,0 +1,11 @@
+task publishDocs(type: Exec) {
+    executable "bash"
+    args "-c", '''
+        HTML_DIR="../../administration-docs"
+        hugo --destination $HTML_DIR
+        cd $HTML_DIR
+        git add .
+        git commit -m "Update docs"
+        git push upstream main
+    '''
+}

@@ -1,0 +1,6 @@
+baseURL = "https://ksch-workflows.github.io/administration/"
+languageCode = "en-gb"
+title = "Administration Architecture Documentation"
+
+[params]
+  projectName = "Administration"

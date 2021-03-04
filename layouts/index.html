@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ .Site.Title }}</title>
+</head>
+
+<body>
+  <h1>{{ .Site.Params.ProjectName }} Architecture Documentation</h1>
+  <hr />
+  
+  {{ .Content}}
+  
+  <ol>
+    {{ range where (sort .Pages "File.Path") "Params.hidden" "ne" "true" }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a> - {{ .Params.Purpose }}
+      </li>
+    {{ end }}
+  </ol>
+  
+  <hr />
+  
+  <a href="{{ "imprint" | relURL }}">Imprint</a>
+  
+</body>
+
+</html>

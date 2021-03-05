@@ -8,4 +8,4 @@ CREATED_DIR=$(echo ${CREATED_MESSAGE} | cut -d ' ' -f1)
 
 sed -i 's/YYYY-MM-DD/'${DATE}'/g' "${CREATED_DIR}/index.md"
 
-echo ${CREATED_DIR}
+echo ${CREATED_MESSAGE}

@@ -11,9 +11,7 @@
 ### Add a new architecture decision record
 
 ```
-DATE=2021-03-04
-SUBJECT=example-subject
-hugo new --kind adr 09_architecture-decisions/${DATE}_${SUBJECT}
+./create_adr.sh
 ```
 
 ## Maintenance

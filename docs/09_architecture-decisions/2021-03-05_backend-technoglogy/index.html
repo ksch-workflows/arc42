@@ -80,6 +80,7 @@ Since the instance will only be sporadicly used at random times, having an alway
 <li>The free plan is limited to 512 MB (this should be sufficient for quite a while, though).</li>
 <li>Also the next standard plans are limited to 512 MB. And getting more RAM for a production environment would be very expensive.</li>
 <li>The idea to use Dart for both the backend and the frontend needs to be discarded.</li>
+<li>Uses Postgres as preferred database while MySQL is already in use in Kirpal Sagar.</li>
 </ul>
 <h3 id="e-google-app-enginge">(E) Google App Enginge</h3>
 <ul>
@@ -90,6 +91,7 @@ Since the instance will only be sporadicly used at random times, having an alway
 <ul>
 <li>Simple deployment process.</li>
 <li>Keeps to door open for an on-premise deployment.</li>
+<li>Supports MySQL via CloudSQL</li>
 </ul>
 <h4 id="cons-4">Cons</h4>
 <ul>
@@ -110,8 +112,7 @@ Since the instance will only be sporadicly used at random times, having an alway
 <li>Google App Engine offers hosting of Java/Spring applications on high-performance VMs which can scale down to zero instances.</li>
 </ul>
 <p>So, it seems like it will be better to use a classic Java/Spring backend instead of a cutting-edge serverless backend.
-Google App Engine will be tried first.
-If the auto-scale to zero instances doesn&rsquo;t work, the Heroku free plan can be used as fallback solution.</p>
+Google App Engine seems like a good fit in terms of features and price.</p>
 
   
   <hr />

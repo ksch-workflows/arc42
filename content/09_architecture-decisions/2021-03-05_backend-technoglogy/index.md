@@ -109,5 +109,4 @@ Since the instance will only be sporadicly used at random times, having an alway
 - Google App Engine offers hosting of Java/Spring applications on high-performance VMs which can scale down to zero instances.
 
 So, it seems like it will be better to use a classic Java/Spring backend instead of a cutting-edge serverless backend.
-Google App Engine will be tried first.
-If the auto-scale to zero instances doesn't work, the Heroku free plan can be used as fallback solution.
+Both Heroku and Google App Engine seem like a good fit.

@@ -11,6 +11,10 @@
   </url>
   
   <url>
+    <loc>https://ksch-workflows.github.io/administration/09_architecture-decisions/2021-03-05_backend-technoglogy/</loc>
+  </url>
+  
+  <url>
     <loc>https://ksch-workflows.github.io/administration/05_building-block-view/</loc>
   </url>
   
@@ -32,6 +36,10 @@
   
   <url>
     <loc>https://ksch-workflows.github.io/administration/07_deployment-view/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ksch-workflows.github.io/administration/09_architecture-decisions/2021-03-05_frontend-technology/</loc>
   </url>
   
   <url>

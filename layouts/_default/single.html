@@ -7,11 +7,14 @@
   
   <hr />
   
-  <p>
-    <i>{{ .Params.Purpose }}</i>
-  </p>
-  
-  <hr />
+  {{ if .Params.Purpose }}
+    <p>
+      <i>{{ .Params.Purpose }}</i>
+    </p>
+    
+    <hr />
+  {{ end }}
+
   
   {{ .Content}}
   

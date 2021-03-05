@@ -17,7 +17,10 @@
   <table border="1" style="width:100%;">
     <tr>
       <th>
-        Date
+        Created at
+      </th>
+      <th>
+        Status
       </th>
       <th style="width:90%;">
         Subject
@@ -26,7 +29,10 @@
     {{ range sort .Pages "File.Path" }}
       <tr>
         <td>
-          {{ .Params.FormattedDate }}
+          {{ .Params.CreatedAt }}
+        </td>
+        <td>
+          {{ .Params.Status }}
         </td>
         <td>
           <a href="{{ .RelPermalink }}">{{ .Title }}</a>

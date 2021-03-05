@@ -1,22 +1,63 @@
 ---
 title: TBD
-formattedDate: YYYY-MM-DD
+createdAt: YYYY-MM-DD
+status: draft
 ---
-
-## Status
-
-proposed
-
-<!-- proposed | accepted | rejected | deprecated | superseded -->
 
 ## Context
 
 TBD
 
+## Alternatives
+
+### (A) TBD
+
+- TBD
+
+#### Pros
+
+- TBD
+
+#### Cons
+
+- TBD
+
+#### References
+
+- []()
+
+### (B) TBD
+
+- TBD
+
+#### Pros
+
+- TBD
+
+#### Cons
+
+- TBD
+
+#### References
+
+- []()
+
+### (C) TBD
+
+- TBD
+
+#### Pros
+
+- TBD
+
+#### Cons
+
+- TBD
+
+#### References
+
+- []()
+
 ## Decision
-
-TBD
-
-## Consequences
 
 TBD

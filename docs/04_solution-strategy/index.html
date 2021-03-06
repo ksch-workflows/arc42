@@ -16,7 +16,47 @@
   
 
   
-  
+  <h2 id="object-naming-conventions">Object naming conventions</h2>
+<h3 id="data-bag">Data bag</h3>
+<p>In every software system there are actors and work materials which manifest in various layers of the software.
+In each layer there is a different focus for what needs to be done with the data.</p>
+<ul>
+<li>In the persitence layer it needs to be mapped to the database structure.</li>
+<li>In the domain layer there are business processes which are working on the data.</li>
+<li>In the user interface layer the data gets received.</li>
+</ul>
+<p>In order to keep the different concerns distinct but still be able to keep them in sync, for every actor or work material there should be an interface which defines getter methods for the required data, e.g.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">Patient</span> <span style="color:#f92672">{</span>
+    Object <span style="color:#a6e22e">getName</span><span style="color:#f92672">();</span>
+    Object <span style="color:#a6e22e">getAge</span><span style="color:#f92672">();</span>
+    Object <span style="color:#a6e22e">getGender</span><span style="color:#f92672">();</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>On this layer the abstract <code>Object</code> type is being used so that each layer can decide on its own what is the approperiate data type there, e.g. <code>getName()</code> can return <code>String</code> on the database layer and <code>Optional&lt;Name&gt;</code> on the business layer.</p>
+<h3 id="data-access-object">Data Access Object</h3>
+<p>For the sake of convenience the object relational mapper JPA/Hibernate will be used in this project.
+The objects which will be mapped to the database columns will have the suffix &ldquo;Dao&rdquo;.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">
+</code></pre></div><p>The main idea here is to keep the JPA related annotations distinct from the classes which are used to process the business logic.</p>
+<p>In order to prevent a broad usage of those classes, they should be package private.</p>
+<p>Please note that this is a custom interpretation of the name &ldquo;Data Access Object&rdquo; which differs from <a href="https://www.baeldung.com/java-dao-pattern">common DAO pattern implementations</a>.
+So maybe in future this could be renamed.
+However, other possible terms for this design idea, e.g. &ldquo;Bean&rdquo;, might also invoke connotations to different concepts.</p>
+<h2 id="ddd">DDD</h2>
+<h3 id="domain-events">Domain Events</h3>
+<ul>
+<li><a href="https://martinfowler.com/eaaDev/DomainEvent.html">https://martinfowler.com/eaaDev/DomainEvent.html</a></li>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/domain-events-design-implementation">https://docs.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/domain-events-design-implementation</a></li>
+<li><a href="https://www.innoq.com/en/blog/domain-events-versus-event-sourcing/">https://www.innoq.com/en/blog/domain-events-versus-event-sourcing/</a></li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://github.com/xmolecules/jmolecules">https://github.com/xmolecules/jmolecules</a></li>
+<li><a href="https://www.reddit.com/r/learnjava/comments/b2h3pm/differences_between_java_bean_entity_class_dao/">https://www.reddit.com/r/learnjava/comments/b2h3pm/differences_between_java_bean_entity_class_dao/</a></li>
+<li><a href="https://www.martinfowler.com/bliki/AnemicDomainModel.html">https://www.martinfowler.com/bliki/AnemicDomainModel.html</a></li>
+<li></li>
+<li><a href="https://en.wikipedia.org/wiki/Data_access_object">https://en.wikipedia.org/wiki/Data_access_object</a></li>
+</ul>
+
   
   <hr />
   

@@ -142,7 +142,8 @@ Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf dies
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ksch-workflows.github.io/administration/04_solution-strategy/</guid>
-      <description></description>
+      <description>Object naming conventions Data bag In every software system there are actors and work materials which manifest in various layers of the software. In each layer there is a different focus for what needs to be done with the data.
+ In the persitence layer it needs to be mapped to the database structure. In the domain layer there are business processes which are working on the data. In the user interface layer the data gets received.</description>
     </item>
     
   </channel>

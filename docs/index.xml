@@ -61,8 +61,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ksch-workflows.github.io/administration/04_solution-strategy/ddd/</guid>
-      <description>Object naming conventions Data bag In every software system there are actors and work materials which manifest in various layers of the software. In each layer there is a different focus for what needs to be done with the data.
- In the persitence layer it needs to be mapped to the database structure. In the domain layer there are business processes which are working on the data. In the user interface layer the data gets received.</description>
+      <description>Motivation  Form follows function
+ The purpose of this software system is to support the day-to-day processes in the Kirpal Sagar Charitable Hospital. How the system is structured internally is a secondary matter. What is important is that it supports the functional and operational requirements of the hospital staff. Further, it is important that the system can be molded when there the requirements are changing. So when new developers are coming into the system, it should be fairly easy for them to add new features or adapt existing features.</description>
     </item>
     
     <item>

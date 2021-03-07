@@ -2,6 +2,18 @@
 title: Domain Driven Design
 ---
 
+## Motivation
+
+> Form follows function
+
+The purpose of this software system is to support the day-to-day processes in the Kirpal Sagar Charitable Hospital.
+How the system is structured internally is a secondary matter.
+What is important is that it supports the functional and operational requirements of the hospital staff.
+Further, it is important that the system can be molded when there the requirements are changing.
+So when new developers are coming into the system, it should be fairly easy for them to add new features or adapt existing features.
+
+All software design patterns which are introduced need to be tested against this testing stone.
+
 ## Object naming conventions
 
 ### Data bag

@@ -1,6 +1,5 @@
 ---
-title: Solution strategy
-purpose: Fundamental solution decisions and ideas
+title: Domain Driven Design
 ---
 
 ## Object naming conventions

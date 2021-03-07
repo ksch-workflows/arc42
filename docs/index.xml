@@ -11,16 +11,6 @@
     
     
     <item>
-      <title>Backend Technology</title>
-      <link>https://ksch-workflows.github.io/administration/09_architecture-decisions/2021-03-05_backend-technoglogy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ksch-workflows.github.io/administration/09_architecture-decisions/2021-03-05_backend-technoglogy/</guid>
-      <description>Context In order to iterative development cycles for acceptance testing and user experience design, it is necessary provide the software in a publicly accessible domain. Since the instance will only be sporadicly used at random times, having an always online instance hosted on a rented virtual machine would be wasteful.
-Alternatives (A) AWS Lambda Pros  AWS offers lots of powerful features to build web applications. The usage based pricing plans lead to fair operational costs.</description>
-    </item>
-    
-    <item>
       <title>Building block view</title>
       <link>https://ksch-workflows.github.io/administration/05_building-block-view/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -66,12 +56,13 @@ Alternatives (A) AWS Lambda Pros  AWS offers lots of powerful features to build 
     </item>
     
     <item>
-      <title>Frontend Technology</title>
-      <link>https://ksch-workflows.github.io/administration/09_architecture-decisions/2021-03-05_frontend-technology/</link>
+      <title>Domain Driven Design</title>
+      <link>https://ksch-workflows.github.io/administration/04_solution-strategy/ddd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ksch-workflows.github.io/administration/09_architecture-decisions/2021-03-05_frontend-technology/</guid>
-      <description>Alternatives (A) Apache Wicket Pros  Powerful framework to create Java based web applications. Relativly small learning curve for new contributors. Supports the reaction of a well designed, modular page structure. Very active community. The framework is time-tested and stable.  Cons  Adding pages with highly dynamic content requires JavaScript which is possible to be hooked into Wicket applications but this gets more and more complicated and thus goes against the goal of maximum simplicity of the source code.</description>
+      <guid>https://ksch-workflows.github.io/administration/04_solution-strategy/ddd/</guid>
+      <description>Object naming conventions Data bag In every software system there are actors and work materials which manifest in various layers of the software. In each layer there is a different focus for what needs to be done with the data.
+ In the persitence layer it needs to be mapped to the database structure. In the domain layer there are business processes which are working on the data. In the user interface layer the data gets received.</description>
     </item>
     
     <item>
@@ -137,13 +128,41 @@ Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf dies
     </item>
     
     <item>
-      <title>Solution strategy</title>
-      <link>https://ksch-workflows.github.io/administration/04_solution-strategy/</link>
+      <title>Testing</title>
+      <link>https://ksch-workflows.github.io/administration/04_solution-strategy/testing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ksch-workflows.github.io/administration/04_solution-strategy/</guid>
-      <description>Object naming conventions Data bag In every software system there are actors and work materials which manifest in various layers of the software. In each layer there is a different focus for what needs to be done with the data.
- In the persitence layer it needs to be mapped to the database structure. In the domain layer there are business processes which are working on the data. In the user interface layer the data gets received.</description>
+      <guid>https://ksch-workflows.github.io/administration/04_solution-strategy/testing/</guid>
+      <description>Rules of thumb  In general, write a test class for every class in the production code.  References TBD</description>
+    </item>
+    
+    <item>
+      <title>Use Flutter as framework for frontend</title>
+      <link>https://ksch-workflows.github.io/administration/09_architecture-decisions/2021-03-05_frontend-technology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ksch-workflows.github.io/administration/09_architecture-decisions/2021-03-05_frontend-technology/</guid>
+      <description>Alternatives (A) Apache Wicket Pros  Powerful framework to create Java based web applications. Relativly small learning curve for new contributors. Supports the reaction of a well designed, modular page structure. Very active community. The framework is time-tested and stable.  Cons  Adding pages with highly dynamic content requires JavaScript which is possible to be hooked into Wicket applications but this gets more and more complicated and thus goes against the goal of maximum simplicity of the source code.</description>
+    </item>
+    
+    <item>
+      <title>Use Google App Engine for the deployment of the staging environment</title>
+      <link>https://ksch-workflows.github.io/administration/09_architecture-decisions/2021-03-05_backend-technoglogy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ksch-workflows.github.io/administration/09_architecture-decisions/2021-03-05_backend-technoglogy/</guid>
+      <description>Context In order to iterative development cycles for acceptance testing and user experience design, it is necessary provide the software in a publicly accessible domain. Since the instance will only be sporadicly used at random times, having an always online instance hosted on a rented virtual machine would be wasteful.
+Alternatives (A) AWS Lambda Pros  AWS offers lots of powerful features to build web applications. The usage based pricing plans lead to fair operational costs.</description>
+    </item>
+    
+    <item>
+      <title>Use Java instead of Kotlin</title>
+      <link>https://ksch-workflows.github.io/administration/09_architecture-decisions/2021-03-07_java-vs-kotlin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ksch-workflows.github.io/administration/09_architecture-decisions/2021-03-07_java-vs-kotlin/</guid>
+      <description>Context Kotlin tries to solve some of the problem in the design of the Java programming language. There are many senior developers which advocate to use Kotlin over Java. Also it is preferred by many mid-level developers.
+Alternatives (A) Java Pros  Very broadly used Many tools which support the language Lots of tutorials  Cons  Verbose syntax No null safety  (B) Kotlin Pros  Null safety Good reputation Enables to write elegant code  Cons  Pushes for certain design ideas (e.</description>
     </item>
     
   </channel>

@@ -4,16 +4,26 @@
 </head>
 <body>
   <h1>{{ .Title}}</h1>
+  
+  <hr />
+  
+  {{ if .Params.Purpose }}
+    <p>
+      <i>{{ .Params.Purpose }}</i>
+    </p>
+    
+    <hr />
+  {{ end }}
 
   {{ .Content}}
   
-  {{ range sort .Pages "File.Path" }}
   <ul>
-    <li>
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-    </li>
+    {{ range sort .Pages "File.Path" }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </li>
+    {{ end }}
   </ul>
-  {{ end }}
   
   <hr />
   

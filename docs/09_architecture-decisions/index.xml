@@ -11,7 +11,16 @@
     
     
     <item>
-      <title>Backend Technology</title>
+      <title>Use Flutter as framework for frontend</title>
+      <link>https://ksch-workflows.github.io/administration/09_architecture-decisions/2021-03-05_frontend-technology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ksch-workflows.github.io/administration/09_architecture-decisions/2021-03-05_frontend-technology/</guid>
+      <description>Alternatives (A) Apache Wicket Pros  Powerful framework to create Java based web applications. Relativly small learning curve for new contributors. Supports the reaction of a well designed, modular page structure. Very active community. The framework is time-tested and stable.  Cons  Adding pages with highly dynamic content requires JavaScript which is possible to be hooked into Wicket applications but this gets more and more complicated and thus goes against the goal of maximum simplicity of the source code.</description>
+    </item>
+    
+    <item>
+      <title>Use Google App Engine for the deployment of the staging environment</title>
       <link>https://ksch-workflows.github.io/administration/09_architecture-decisions/2021-03-05_backend-technoglogy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -21,12 +30,13 @@ Alternatives (A) AWS Lambda Pros  AWS offers lots of powerful features to build 
     </item>
     
     <item>
-      <title>Frontend Technology</title>
-      <link>https://ksch-workflows.github.io/administration/09_architecture-decisions/2021-03-05_frontend-technology/</link>
+      <title>Use Java instead of Kotlin</title>
+      <link>https://ksch-workflows.github.io/administration/09_architecture-decisions/2021-03-07_java-vs-kotlin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ksch-workflows.github.io/administration/09_architecture-decisions/2021-03-05_frontend-technology/</guid>
-      <description>Alternatives (A) Apache Wicket Pros  Powerful framework to create Java based web applications. Relativly small learning curve for new contributors. Supports the reaction of a well designed, modular page structure. Very active community. The framework is time-tested and stable.  Cons  Adding pages with highly dynamic content requires JavaScript which is possible to be hooked into Wicket applications but this gets more and more complicated and thus goes against the goal of maximum simplicity of the source code.</description>
+      <guid>https://ksch-workflows.github.io/administration/09_architecture-decisions/2021-03-07_java-vs-kotlin/</guid>
+      <description>Context Kotlin tries to solve some of the problem in the design of the Java programming language. There are many senior developers which advocate to use Kotlin over Java. Also it is preferred by many mid-level developers.
+Alternatives (A) Java Pros  Very broadly used Many tools which support the language Lots of tutorials  Cons  Verbose syntax No null safety  (B) Kotlin Pros  Null safety Good reputation Enables to write elegant code  Cons  Pushes for certain design ideas (e.</description>
     </item>
     
   </channel>

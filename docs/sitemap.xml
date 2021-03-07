@@ -11,10 +11,6 @@
   </url>
   
   <url>
-    <loc>https://ksch-workflows.github.io/administration/09_architecture-decisions/2021-03-05_backend-technoglogy/</loc>
-  </url>
-  
-  <url>
     <loc>https://ksch-workflows.github.io/administration/05_building-block-view/</loc>
   </url>
   
@@ -39,7 +35,7 @@
   </url>
   
   <url>
-    <loc>https://ksch-workflows.github.io/administration/09_architecture-decisions/2021-03-05_frontend-technology/</loc>
+    <loc>https://ksch-workflows.github.io/administration/04_solution-strategy/ddd/</loc>
   </url>
   
   <url>
@@ -72,6 +68,22 @@
   
   <url>
     <loc>https://ksch-workflows.github.io/administration/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ksch-workflows.github.io/administration/04_solution-strategy/testing/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ksch-workflows.github.io/administration/09_architecture-decisions/2021-03-05_frontend-technology/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ksch-workflows.github.io/administration/09_architecture-decisions/2021-03-05_backend-technoglogy/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ksch-workflows.github.io/administration/09_architecture-decisions/2021-03-07_java-vs-kotlin/</loc>
   </url>
   
 </urlset>

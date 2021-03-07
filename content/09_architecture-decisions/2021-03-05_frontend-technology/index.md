@@ -1,7 +1,7 @@
 ---
-title: Frontend Technology
+title: Use Flutter as framework for frontend
 createdAt: 2021-03-05
-status: draft
+status: active
 ---
 
 ## Alternatives

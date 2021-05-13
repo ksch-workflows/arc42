@@ -1,6 +1,6 @@
 baseURL = "https://ksch-workflows.github.io/arc42"
 languageCode = "en-gb"
-title = "Administration Architecture Documentation"
+title = "K.S.C.H. Workflows Architecture Documentation"
 
 [params]
-  projectName = "Administration"
+  projectName = "K.S.C.H. Workflows"

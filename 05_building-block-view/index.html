@@ -1,1 +1,8 @@
-<html><head><title>Building block view</title></head><body><h1>Building block view</h1><hr><p><i>Abstractions of source code, black-/whiteboxes</i></p><hr><hr><a href=/arc42/imprint>Imprint</a></body></html>
+<html><head><title>Building block view</title></head><body><h1>Building block view</h1><hr><p><i>Abstractions of source code, black-/whiteboxes</i></p><hr><p><img src=img/building-blocks.png alt="building blocks"></p><p>The <a href=https://github.com/ksch-workflows/backend>backend</a> provides a REST API which abstracts database access and
+business process validations for the client applications.</p><p>All the client applications are <a href=https://flutter.dev>Flutter</a> apps.
+They are using the <a href=https://github.com/ksch-workflows/ksch-dart-client>ksch-dart-client</a> library for accessing the REST API
+of the backend.</p><p>The <a href=https://github.com/ksch-workflows/registration-desk>registration-desk</a> is a Flutter Web app to be used at the
+registration desk of the KSCH.</p><p>Later on there should also be a Flutter Web app for the pharmacy desk.</p><p>Further, there should be a Flutter Android app for the hospital administrator.</p><p>For the first experiments with the system, all the REST requests will be
+unauthenticated.
+When the system goes live, the requests should be authenticated using an
+API token aquired via an OAuth 2.1 authorization server.</p><hr><a href=/arc42/imprint>Imprint</a></body></html>

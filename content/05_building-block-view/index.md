@@ -5,6 +5,8 @@ purpose: Abstractions of source code, black-/whiteboxes
 
 ![building blocks](img/building-blocks.png)
 
+<!-- image source: https://drive.google.com/file/d/1uyWOVFPDz0EPu7_7G7EKrAAbpbfGnaEX/view?usp=sharing -->
+
 The [backend](https://github.com/ksch-workflows/backend) provides a REST API which abstracts database access and
 business process validations for the client applications.
 

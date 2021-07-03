@@ -18,9 +18,7 @@
 
 ### Publish website
 
-```
-./publish.sh
-```
+The website is automatically updated after each commit on the repository.
 
 ## References
 

@@ -1,3 +1,5 @@
+This repo is superseeded by https://github.com/ksch-workflows/architecture
+
 # Architecture documentation
 
 ## Dependencies
